@@ -35,4 +35,9 @@ object StringOps extends App {
   val myth = f"$name can eat $speed%2.2f burgers per minute"
   // %2.2f indicates 2 characters minimum with 2 characters after decimal
   println(myth)
+
+  // raw-interpolator
+  println(raw"This is a \n newline")
+  val escaped = "This is a \n newline"
+  println(raw"$escaped")
 }
